@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BinaryStateMachineTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2024-08-08T23:06:02" hostname="Kelsons-MacBook-Pro-2.local" time="0.289">
+  <properties/>
+  <testcase name="testZeroBinaryDigitStateInvalid()" classname="BinaryStateMachineTest" time="0.14"/>
+  <testcase name="testBinaryVerifierValid()" classname="BinaryStateMachineTest" time="0.012"/>
+  <testcase name="testBinaryVerifierInvalid()" classname="BinaryStateMachineTest" time="0.008"/>
+  <testcase name="testInvalidBinaryState()" classname="BinaryStateMachineTest" time="0.002"/>
+  <testcase name="testFirstBinaryDigitStateInvalid()" classname="BinaryStateMachineTest" time="0.005"/>
+  <testcase name="testFirstBinaryDigitStateValid()" classname="BinaryStateMachineTest" time="0.007"/>
+  <testcase name="testZeroBinaryDigitStateOne()" classname="BinaryStateMachineTest" time="0.005"/>
+  <testcase name="testValidBinaryStateValid()" classname="BinaryStateMachineTest" time="0.006"/>
+  <testcase name="testZeroBinaryDigitStateZero()" classname="BinaryStateMachineTest" time="0.013"/>
+  <testcase name="testValidBinaryStateInvalid()" classname="BinaryStateMachineTest" time="0.002"/>
+  <testcase name="testValidBinaryStateZero()" classname="BinaryStateMachineTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
