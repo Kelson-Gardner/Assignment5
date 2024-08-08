@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="IntegerStateMachineTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-08-08T05:18:01" hostname="Kelsons-MacBook-Pro-2.local" time="0.02">
+  <properties/>
+  <testcase name="testInvalidIntegerState()" classname="IntegerStateMachineTest" time="0.002"/>
+  <testcase name="testValidIntegerState()" classname="IntegerStateMachineTest" time="0.003"/>
+  <testcase name="testIntegerVerifierValid()" classname="IntegerStateMachineTest" time="0.003"/>
+  <testcase name="testFirstDigitStateValidState()" classname="IntegerStateMachineTest" time="0.001"/>
+  <testcase name="testIntegerVerifierInvalid()" classname="IntegerStateMachineTest" time="0.001"/>
+  <testcase name="testFirstDigitStateInvalidState()" classname="IntegerStateMachineTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
