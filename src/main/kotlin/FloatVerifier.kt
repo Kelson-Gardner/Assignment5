@@ -11,6 +11,6 @@ class FloatVerifier {
         string.chunked(1).forEach {
             state.consumeCharacter(it, this)
         }
-        return state is ValidSecondPartFloatState
+        return state is ValidFloatState
     }
 }

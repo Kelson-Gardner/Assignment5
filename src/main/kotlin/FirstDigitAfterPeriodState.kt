@@ -3,7 +3,7 @@ class FirstDigitAfterPeriodState: FloatState {
         if(char !in "0123456789"){
             floatVerifier.state = InvalidFloatState()
         } else {
-            floatVerifier.state = ValidSecondPartFloatState()
+            floatVerifier.state = ValidFloatState()
         }
     }
 }

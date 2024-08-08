@@ -5,7 +5,7 @@ class FloatStateMachineTest {
     private var floatVerifier = FloatVerifier()
     private val firstFloatDigit = FirstFloatDigitState()
     private val validFirstPartFloatState = ValidFirstPartFloatState()
-    private val validSecondPartFloatState = ValidSecondPartFloatState()
+    private val validSecondPartFloatState = ValidFloatState()
     private val firstDigitAfterPeriodState = FirstDigitAfterPeriodState()
     private val periodAfterZeroState = PeriodAfterZeroState()
     private val invalidFloatState = InvalidFloatState()
@@ -74,23 +74,23 @@ class FloatStateMachineTest {
      */
     @Test
     fun testValidSecondPartFloatStateValid(){
-        floatVerifier.state = ValidSecondPartFloatState()
+        floatVerifier.state = ValidFloatState()
         validSecondPartFloatState.consumeCharacter("3", floatVerifier)
-        assertEquals(floatVerifier.state is ValidSecondPartFloatState, true)
+        assertEquals(floatVerifier.state is ValidFloatState, true)
         validSecondPartFloatState.consumeCharacter("6", floatVerifier)
-        assertEquals(floatVerifier.state is ValidSecondPartFloatState, true)
+        assertEquals(floatVerifier.state is ValidFloatState, true)
         validSecondPartFloatState.consumeCharacter("9", floatVerifier)
-        assertEquals(floatVerifier.state is ValidSecondPartFloatState, true)
+        assertEquals(floatVerifier.state is ValidFloatState, true)
     }
     @Test
     fun testValidSecondPartFloatStateInvalid(){
-        floatVerifier.state = ValidSecondPartFloatState()
+        floatVerifier.state = ValidFloatState()
         validSecondPartFloatState.consumeCharacter(".", floatVerifier)
         assertEquals(floatVerifier.state is InvalidFloatState, true)
-        floatVerifier.state = ValidSecondPartFloatState()
+        floatVerifier.state = ValidFloatState()
         validSecondPartFloatState.consumeCharacter("a", floatVerifier)
         assertEquals(floatVerifier.state is InvalidFloatState, true)
-        floatVerifier.state = ValidSecondPartFloatState()
+        floatVerifier.state = ValidFloatState()
         validSecondPartFloatState.consumeCharacter("?", floatVerifier)
         assertEquals(floatVerifier.state is InvalidFloatState, true)
     }
@@ -102,13 +102,13 @@ class FloatStateMachineTest {
     fun testFirstDigitAfterPeriodStateValid(){
         floatVerifier.state = FirstDigitAfterPeriodState()
         firstDigitAfterPeriodState.consumeCharacter("3", floatVerifier)
-        assertEquals(floatVerifier.state is ValidSecondPartFloatState, true)
+        assertEquals(floatVerifier.state is ValidFloatState, true)
         floatVerifier.state = FirstDigitAfterPeriodState()
         firstDigitAfterPeriodState.consumeCharacter("6", floatVerifier)
-        assertEquals(floatVerifier.state is ValidSecondPartFloatState, true)
+        assertEquals(floatVerifier.state is ValidFloatState, true)
         floatVerifier.state = FirstDigitAfterPeriodState()
         firstDigitAfterPeriodState.consumeCharacter("9", floatVerifier)
-        assertEquals(floatVerifier.state is ValidSecondPartFloatState, true)
+        assertEquals(floatVerifier.state is ValidFloatState, true)
     }
     @Test
     fun testFirstDigitAfterPeriodStateInvalid(){
@@ -158,11 +158,11 @@ class FloatStateMachineTest {
     @Test
     fun testFloatVerifierValid(){
         floatVerifier.verify("1234.1234")
-        assertEquals(floatVerifier.state is ValidSecondPartFloatState, true)
+        assertEquals(floatVerifier.state is ValidFloatState, true)
         floatVerifier.verify(".1234")
-        assertEquals(floatVerifier.state is ValidSecondPartFloatState, true)
+        assertEquals(floatVerifier.state is ValidFloatState, true)
         floatVerifier.verify("0.1234")
-        assertEquals(floatVerifier.state is ValidSecondPartFloatState, true)
+        assertEquals(floatVerifier.state is ValidFloatState, true)
     }
     @Test
     fun testFloatVerifierInvalidDigit(){
