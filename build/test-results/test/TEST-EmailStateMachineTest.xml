@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="EmailStateMachineTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2024-08-09T23:37:49" hostname="Kelsons-MacBook-Pro-2.local" time="0.13">
+  <properties/>
+  <testcase name="testFirstCharacterEmailPart3StateValid()" classname="EmailStateMachineTest" time="0.061"/>
+  <testcase name="testEmailPart1StateValid()" classname="EmailStateMachineTest" time="0.003"/>
+  <testcase name="testEmailVerifierInvalidPeriod()" classname="EmailStateMachineTest" time="0.006"/>
+  <testcase name="testEmailVerifierInvalidSpace()" classname="EmailStateMachineTest" time="0.001"/>
+  <testcase name="testEmailPart2StateInvalid()" classname="EmailStateMachineTest" time="0.007"/>
+  <testcase name="testValidEmailValid()" classname="EmailStateMachineTest" time="0.002"/>
+  <testcase name="testEmailPart1StateInvalid()" classname="EmailStateMachineTest" time="0.001"/>
+  <testcase name="testEmailVerifierInvalidAt()" classname="EmailStateMachineTest" time="0.001"/>
+  <testcase name="testFirstCharacterEmailPart2StateValid()" classname="EmailStateMachineTest" time="0.001"/>
+  <testcase name="testFirstCharacterEmailPart3StateInvalid()" classname="EmailStateMachineTest" time="0.003"/>
+  <testcase name="testFirstCharacterEmailPart2StateInvalid()" classname="EmailStateMachineTest" time="0.003"/>
+  <testcase name="testEmailVerifierValid()" classname="EmailStateMachineTest" time="0.002"/>
+  <testcase name="testFirstCharacterEmailPart1StateInvalid()" classname="EmailStateMachineTest" time="0.001"/>
+  <testcase name="testEmailPart2StateValid()" classname="EmailStateMachineTest" time="0.001"/>
+  <testcase name="testEmailVerifierInvalidMissingPart()" classname="EmailStateMachineTest" time="0.004"/>
+  <testcase name="testValidEmailInvalid()" classname="EmailStateMachineTest" time="0.002"/>
+  <testcase name="testInvalidEmail()" classname="EmailStateMachineTest" time="0.0"/>
+  <testcase name="testFirstCharacterEmailPart1StateValid()" classname="EmailStateMachineTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
