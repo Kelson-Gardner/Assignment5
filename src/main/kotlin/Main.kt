@@ -1,13 +1,12 @@
 fun main(args: Array<String>) {
-    val verifier = EmailVerifier()
+    val verifier = PasswordVerifier()
 
-    println(verifier.verify("a@b.c"))
-    println(verifier.verify("joseph.ditton@usu.edu"))
-    println(verifier.verify("{}*\$.&\$*(@*\$%&.*&*"))
-    println(verifier.verify("@b.c"))
-    println(verifier.verify("a@b@c.com"))
-    println(verifier.verify("a.b@b.b.c"))
-    println(verifier.verify("joseph ditton@usu.edu"))
-    println(verifier.verify("josephditton@us u.edu"))
-    println(verifier.verify("josephditton@usu.ed u"))
+    println(verifier.verify("aaaaH!aa"))
+    println(verifier.verify("1234567*9J"))
+    println(verifier.verify("asdpoihj;loikjasdf;ijp;lij2309jasd;lfkm20ij@aH"))
+    println(verifier.verify("a"))
+    println(verifier.verify("aaaaaaa!"))
+    println(verifier.verify("aaaHaaaaa"))
+    println(verifier.verify("Abbbbbbb!"))
+    println(verifier.verify("aaaaa!aaaaaaaaa"))
 }
